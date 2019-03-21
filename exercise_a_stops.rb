@@ -16,7 +16,9 @@ stops.delete_at(1)
 p "There are " + stops.length().to_s() + " stops."
 # 8. How many ways can we return `"Falkirk High"` from the array?
 p stops.fetch(1)
-p stops.find("Falkirk High")
+p stops[1]
+p stops.at[1]
+p stops[-4]
 if stops.include? "Falkirk High"
   p "Falkirk High"
 end
